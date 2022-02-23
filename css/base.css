@@ -1,0 +1,147 @@
+:root{
+    --color-primary: #8ed3cc;
+    --color-secundario: #e082a8;
+    --color-gris: #979797;
+    --color-grisClaro: #f8f8f8;
+    --color-black: #000;
+    --color-white: #fff;
+
+    --funtePrincipal: 'Lato', sans-serif;    
+    --funteSecundaria: 'Italianno', sans-serif;    
+
+    --separacion: 5rem;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+  
+body {
+    font-family: var(--funtePrincipal);
+    font-size: 1.6rem;
+    background-color: var(--color-grisClaro);
+}
+
+p {
+    color: var(--color-black);
+    font-size: 1.5rem;
+    line-height: 2;
+}
+.contenedor {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.headin--cursiva{
+    text-align: center;
+    color: var(--color-secundario);
+    font-family: var(--funteSecundaria);
+    line-height: .8;
+    font-weight: 400;
+    text-transform: lowercase;
+    font-size: 4rem;
+}
+.headin--cursiva span{
+    font-family: var( --funtePrincipal);
+    color: var(--color-black);
+    text-transform: uppercase;
+    display: block;
+}
+
+.heading--normal{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+}
+
+h1, h2, h3 {
+    margin: 0 0 2rem  0 ;
+}
+
+h1 {
+    font-size: 3rem;
+}
+@media (min-width: 768px) {
+    h1 {
+        font-size: 4rem;
+    }
+}
+
+h2 {
+    font-family: var(--funteSecundaria);
+    font-size: 3rem;
+}
+
+@media (min-width: 768px){
+    h2 {
+        font-size: 2.5rem;
+    }
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+@media (min-width: 768px){
+    h3 {
+        font-size: 2rem;
+    }
+}
+
+ul {
+    padding:0;
+    list-style: none;
+    margin: 0;
+}
+
+.btn{
+    padding: 2rem 2rem;
+    margin-top: 2rem;
+    font-size: 2.2rem;
+    font-weight: 400;
+    display: inline-block;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    transition: background-color;
+    transition-duration: 300ms;
+}
+
+.seccion{
+    padding: 5rem 0;
+}
+@media (min-width: 768px){
+    .seccion{
+        padding: 8rem 0;
+    }
+}
+
+[class$="__heading"]{
+    margin: 2rem 0;
+}
+
+.scroll-horizontal{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+}
+
+.bg{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
